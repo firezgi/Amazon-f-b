@@ -20,6 +20,10 @@ const promise= loadStripe('pk_test_51JLEuGC3gTmIR4L1V8ykqw1uZdZ4pgGh7ywMgqpgUZvN
 function App() {
   const [{ }, dispatch] = useStateValue();
   useEffect(() => {
+    
+  
+    document.title = "Amazon Clone"
+  
     auth.onAuthStateChanged((authUser) => {
       // console.log("THE USER IS >>> ", authUser);
       if (authUser) {
